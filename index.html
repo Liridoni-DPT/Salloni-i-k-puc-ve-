@@ -7,12 +7,11 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background-color: #f9f9f9; }
         h1 { text-align: center; color: #333; margin-bottom: 40px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
-        .card { background: #fff; border-radius: 12px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
-        .card:hover { transform: scale(1.03); }
-        .card img { width: 100%; height: 280px; object-fit: cover; border-radius: 8px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: #fff; border-radius: 12px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        .card img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
         .card h3 { font-size: 16px; margin: 15px 0; color: #444; }
-        .btn { display: block; background: #25d366; color: #fff; padding: 12px; text-decoration: none; border-radius: 8px; font-weight: bold; }
+        .btn { display: block; background: #25d366; color: #fff; padding: 10px; text-decoration: none; border-radius: 8px; font-weight: bold; }
         .btn:hover { background: #128c7e; }
     </style>
 </head>
@@ -21,27 +20,20 @@
     <h1>Salloni i Kpucëve - Koleksioni ynë</h1>
 
     <div class="grid">
-        <!-- Produktet - Shtoni sa të doni duke kopjuar këtë bllok -->
-        <div class="card">
-            <img src="images/11liridoni.jpeg" alt="Produkt">
-            <h3>Sandale Moderne</h3>
-            <a class="btn" href="https://wa.me/38349357723?text=Përshëndetje, dua të porosis produktin: Sandale Moderne" target="_blank">Porosit në WhatsApp</a>
-        </div>
-        <div class="card">
-            <img src="images/Doni.jpeg" alt="Produkt">
-            <h3>Kpucë Klasike</h3>
-            <a class="btn" href="https://wa.me/38349357723?text=Përshëndetje, dua të porosis produktin: Kpucë Klasike" target="_blank">Porosit në WhatsApp</a>
-        </div>
-        <div class="card">
-            <img src="images/Doni2.jpeg" alt="Produkt">
-            <h3>Model Elegant</h3>
-            <a class="btn" href="https://wa.me/38349357723?text=Përshëndetje, dua të porosis produktin: Model Elegant" target="_blank">Porosit në WhatsApp</a>
-        </div>
-        <div class="card">
-            <img src="images/Liridoni.jpeg" alt="Produkt">
-            <h3>Atlete Sportive</h3>
-            <a class="btn" href="https://wa.me/38349357723?text=Përshëndetje, dua të porosis produktin: Atlete Sportive" target="_blank">Porosit në WhatsApp</a>
-        </div>
+        <!-- Lista e fotove nga folderi juaj images -->
+        <script>
+            const images = ["11liridoni.jpeg", "1liridoni.jpeg", "Don11.jpeg", "Doni.jpeg", "Doni123.jpeg", "Doni2.jpeg", "Doni3.jpeg", "Donii.jpeg", "Doniii.jpeg", "L11ridoni.jpeg", "L1ri1doni.jpeg", "L1ridioni.jpeg", "L1ridon11.jpeg", "L1ridoni2.jpeg", "LIRIDONI.jpeg", "Li2ridoni.jpeg", "Lidironi11.jpeg", "Liiiridoni.jpeg", "Liiridoni.jpeg", "Liiridini.jpeg", "Lir1doni.jpeg", "Lir1idoni1.jpeg", "Liridoni.jpeg", "Liridoni1.jpeg", "Liridoni11.jpeg"];
+            
+            images.forEach(img => {
+                document.write(`
+                    <div class="card">
+                        <img src="images/${img}" alt="Produkt">
+                        <h3>Model i ri</h3>
+                        <a class="btn" href="https://wa.me/38349357723?text=Përshëndetje, dua të porosis produktin: ${img}" target="_blank">Porosit në WhatsApp</a>
+                    </div>
+                `);
+            });
+        </script>
     </div>
 
 </body>
